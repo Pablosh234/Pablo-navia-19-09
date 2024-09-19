@@ -1,0 +1,49 @@
+.contenedor{
+    background-color: aqua;
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 6fr 1fr;
+    grid-template-areas: "header  header  header"
+                         "side1   side1   side1" 
+                         "contenido1  contenido2  side2"
+                         "footer  footer  footer"
+    ;
+}
+.contenedor .header{
+    background-color: rgb(255, 210, 180);
+    grid-column: header;
+}
+.contenedor .side1{
+    background-color: chocolate;
+    grid-column: side1;
+}
+.contenedor .contenido1{
+    background-color: slateblue;
+    grid-column: contenido1;
+}
+.contenedor .contenido2{
+    background-color: rgb(90, 205, 136);
+    grid-column: contenido2;
+}
+.contenedor .side2{
+    background-color: yellow;
+    grid-column: side2;
+}
+.contenedor .footer{
+    background-color: rgba(0, 123, 255, 0.638);
+    grid-column: footer;
+}
+.contenedor .hijo1{
+    background-color: chocolate;
+    padding: 20px;
+    margin: 10px;
+}
+.contenedor .hijo2{
+    background-color: salmon;
+    padding: 20px;
+    margin: 10px;    
+}
